@@ -2,6 +2,11 @@
   "name": "dyad",
   "productName": "dyad",
   "version": "0.18.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rimraf dist"
   "description": "Free, local, open-source AI app builder",
   "main": ".vite/build/main.js",
   "repository": {
@@ -11,11 +16,6 @@
   "engines": {
     "node": ">=20"
   },
-  "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview"
-}
 
   "scripts": {
     "clean": "rm -rf out && rm -rf scaffold/node_modules",
