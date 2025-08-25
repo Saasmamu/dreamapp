@@ -12,6 +12,12 @@
     "node": ">=20"
   },
   "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview"
+}
+
+  "scripts": {
     "clean": "rm -rf out && rm -rf scaffold/node_modules",
     "start": "electron-forge start",
     "dev:engine": "DYAD_ENGINE_URL=http://localhost:8080/v1 npm start",
