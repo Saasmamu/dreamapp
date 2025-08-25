@@ -2,11 +2,6 @@
   "name": "dyad",
   "productName": "dyad",
   "version": "0.18.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "clean": "rimraf dist"
   "description": "Free, local, open-source AI app builder",
   "main": ".vite/build/main.js",
   "repository": {
@@ -16,9 +11,12 @@
   "engines": {
     "node": ">=20"
   },
-
+  "private": true,
   "scripts": {
-    "clean": "rm -rf out && rm -rf scaffold/node_modules",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rimraf dist && rm -rf out && rm -rf scaffold/node_modules",
     "start": "electron-forge start",
     "dev:engine": "DYAD_ENGINE_URL=http://localhost:8080/v1 npm start",
     "staging:engine": "DYAD_ENGINE_URL=https://staging---dyad-llm-engine-kq7pivehnq-uc.a.run.app/v1 npm start",
